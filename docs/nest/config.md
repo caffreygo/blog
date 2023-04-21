@@ -58,12 +58,12 @@ export class PrismaService {
 
 ConfigModule 模块会加载.env 配置项
 
-1. 在开发时.env 会有一些隐私数据，所以建议将**.env**放在**.gitignore**文件中
-2. 创建一个和**.env**配置名一样的**.env.example**文件，上线后将其改名为**.env**
+1. 在开发时 `.env` 会有一些隐私数据，所以建议将 `.env` 放在 `.gitignore` 文件中
+2. 创建一个和 `.env` 配置名一样的 `.env.example` 文件，上线后将其改名为 `.env`
 
-**.env**
+.env
 
-该文件用于开发时使用，要定义在 **.gitignore**中，不提交到版本库
+> 该文件用于开发时使用，要定义在 .gitignore 中，不提交到版本库
 
 ```typescript
 #数据库连接;
@@ -71,11 +71,11 @@ DATABASE_URL = "mysql://root:admin888@localhost:3306/nest-edu";
 NODE_ENV = development;
 ```
 
-**.env.example**
+.env.example
 
 该文件是生产环境使用的参考文件，要提交到版本库。
 
-网站上线后将该文件复制一个，并修改文件名为**.env** 文件，并修改里面配置项内容
+网站上线后将该文件复制一个，并修改文件名为 `.env` 文件，并修改里面配置项内容
 
 ```typescript
 #数据库连接;
@@ -83,13 +83,13 @@ DATABASE_URL = "mysql://root:houdunren@localhost:3306/nest-edu";
 NODE_ENV = production;
 ```
 
-现在可以在代码中使用 **process.env.NODE_ENV** 区分开发环境还是线上环境
+现在可以在代码中使用 `process.env.NODE_ENV` 区分开发环境还是线上环境
 
 ### 模块定义
 
-在 **app.module.ts** 模块中对**ConfigModule**进行定义
+在 `app.module.ts` 模块中对 `ConfigModule` 进行定义
 
-- 使用 **envFilePath** 加载多个 env 配置文件
+- 使用 `envFilePath` 加载多个 env 配置文件
 - 多个 env 文件有同名配置项时，前面的优先级高
 
 ```typescript
@@ -114,9 +114,9 @@ export class AppModule {}
 
 ### 版本库
 
-**.env**会包含开发时的私密信息，如理阿里云密钥等。所以将**.env**文件放在**.gitignore**中忽略提交。
+`.env` 会包含开发时的私密信息，如理阿里云密钥等。所以将 `.env` 文件放在 `.gitignore` 中忽略提交。
 
-然后在项目中创建一个同样的**.env.example** 文件，在生产环境中把 **.env.example** 内容改名为**.env**后使用。
+然后在项目中创建一个同样的 `.env.example` 文件，在生产环境中把 `.env.example` 内容改名为`.env` 后使用。
 
 这样做可以保护隐私数据不提交到 GIT，尤其对于开源项目这很重要。
 
@@ -126,7 +126,7 @@ export class AppModule {}
 
 ### 文件定义
 
-下面在 **src/config** 目录定义两个配置文件
+下面在 `src/config` 目录定义两个配置文件
 
 src/config/app.ts
 
@@ -151,7 +151,7 @@ export default () => ({
 
 ### 模块声明
 
-然后在**ConfigModule**模块中使用 **load** 属性声明加载
+然后在 `ConfigModule` 模块中使用 `load` 属性声明加载
 
 ```typescript
 import { ConfigModule } from "@nestjs/config";
@@ -189,7 +189,7 @@ export class AppService {
 
 ### 文件合并
 
-如果你项目不复杂，也可以把上面两个配置文件，合并到一个文件中。以下是 **src/config.ts** 文件的内容
+如果你项目不复杂，也可以把上面两个配置文件，合并到一个文件中。以下是 `src/config.ts` 文件的内容
 
 ```typescript
 export default () => ({
