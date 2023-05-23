@@ -938,7 +938,7 @@ new Promise((resolve, reject) => {
 const promise = new Promise((resolve, reject) => {
   throw new Error("fail");
 }).catch(msg => {
-  console.log(msg.toString()+"后盾人");
+  console.log(msg.toString()+"!!ERROR!!");
 });
 ```
 
@@ -964,7 +964,7 @@ const promise = new Promise((resolve, reject) => {
     throw new Error("fail");  // 异步错误应该用reject =>  reject(new Error("fail"))
   }, 2000);
 }).catch(msg => {
-  console.log(msg + "后盾人");
+  console.log(msg + "!!ERROR!!");
 });
 ```
 
@@ -1957,7 +1957,7 @@ async function sleep(ms = 2000) {
   });
 }
 async function run() {
-  for (const value of ["后盾人", "向军"]) {
+  for (const value of ["Hello", "World"]) {
     await sleep();
     console.log(value);
   }

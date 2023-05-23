@@ -453,7 +453,7 @@ console.table(str.match(/[𝒳𝒴]/u)); //结果正确 "𝒳"
 let abc = `测试器不断分享视频教程，测试器网址是 google.com`;
 let reg = /测试器(.{2})/g;
 reg.lastIndex = 10; //从索引10开始搜索
-console.log(reg.exec(abc));  // ['后盾人网址', '网址', index: 12...]
+console.log(reg.exec(abc));  // ['测试器网址', '网址', index: 12, input: '测试器不断分享视频教程，测试器网址是 google.com', groups: undefined]
 console.log(reg.lastIndex);  // 17
 
 reg = /\p{sc=Han}/gu;   // 打印出所有汉字 g

@@ -157,7 +157,7 @@ charset utf8;
 **添加测试数据**
 
 ```sql
-INSERT INTO class (cname,description) VALUES('PHP','后盾人教你使用PHP快速开发网站');
+INSERT INTO class (cname,description) VALUES('Nest','教你使用Nest快速开发网站');
 INSERT INTO class (cname) VALUES('Mysql');
 ```
 
