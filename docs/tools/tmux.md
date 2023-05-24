@@ -125,7 +125,7 @@ tmux滚动窗口需要通过指令操作
 
 ### tmux下载
 
-使用以下命令安装 tmux，linux与mac都可以使用[brew (opens new window)](http://houdunren.gitee.io/note/linux/2 常用工具.html#brew)进行安装
+使用以下命令安装 tmux，linux与mac都可以使用 brew 进行安装
 
 ```sh
 # Mac

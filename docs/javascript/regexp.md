@@ -338,7 +338,7 @@ console.log(/\d+ - \d+/.test(tel)); // true
 ```js
 let str = `
   <span>
-    houdunren
+    nice
     strcms
   </span>
 `;
@@ -1017,7 +1017,7 @@ console.dir(str.matchAll(/(\w)/i));
 ```js
 let abc = `https://abccms.com  
 https://www.sina.com.cn
-https://www.houdunren.com`;
+https://www.baidu.com`;
 
 let res = search(abc, /https?:\/\/(\w+\.)?(\w+\.)+(com|cn)/gi);
 console.dir(res);
@@ -1142,7 +1142,7 @@ console.log(abc.replace(/\((\d{3,4})\)(\d{7,8})/g, "$1-$2"));
   const body = document.body;
   body.innerHTML = body.innerHTML.replace(
     /教育/g,
-    `<a href="https://www.houdunren.com">$&</a>`
+    `<a href="https://www.baidu.com">$&</a>`
   );
 </script>
 ```
@@ -1418,7 +1418,7 @@ node.js,180.00元,260次
 
 **零宽后行断言** `?<=exp` 匹配前面为 `exp` 的内容
 
-匹配前面是`houdunren` 的数字
+匹配前面是`hello` 的数字
 
 ```js
 let abc = "hello789hi666";

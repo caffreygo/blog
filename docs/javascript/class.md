@@ -236,11 +236,11 @@ function User() {
   };
 }
 User.show = function() {
-  return "welcome to houdunren";
+  return "welcome to VC";
 };
 const u = new User();
 console.dir(u.show());    //this is a object function
-console.dir(User.show()); // welcome to houdunren
+console.dir(User.show()); // welcome to VC
 ```
 
 🔰 在 `class` 内声明的方法前使用 `static` 定义的方法即是静态方法

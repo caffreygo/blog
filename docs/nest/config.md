@@ -79,7 +79,7 @@ NODE_ENV = development;
 
 ```typescript
 #数据库连接;
-DATABASE_URL = "mysql://root:houdunren@localhost:3306/nest-edu";
+DATABASE_URL = "mysql://root:password@localhost:3306/nest-edu";
 NODE_ENV = production;
 ```
 

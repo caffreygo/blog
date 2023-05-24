@@ -167,7 +167,7 @@ B 地球是圆的
 
 ```html
 下而是来自某一个大叔，对失败的认知
-<blockquote cite="https://www.houdunren.com">
+<blockquote cite="https://www.baidu.com">
 	在坚持的人面前，失败终将被踏过。
 </blockquote>
 ```

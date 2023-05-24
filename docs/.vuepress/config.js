@@ -12,7 +12,7 @@ module.exports = {
     lineNumbers: false
   },
   themeConfig: {
-    sidebar: 'auto',
+    // sidebar: 'auto',
     lastUpdatedText: '上次更新',
     contributorsText: '贡献者',
     tip: '提示',

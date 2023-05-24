@@ -123,7 +123,7 @@ console.log(sum(1, 2, 3));
 ```js
 "use strict";
 (function () {
-    var web = 'houdunren';
+    var web = '123';
 })();
 console.log(web); //web is not defined
 ```
@@ -132,7 +132,7 @@ console.log(web); //web is not defined
 
 ```js
 {
-	let web = 'houdunren';
+	let web = '123';
 }
 console.log(web);   // ReferenceError: web is not defined
 ```
