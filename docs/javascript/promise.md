@@ -1390,6 +1390,7 @@ new Promise(resolve => {
   console.log("收藏成功！奖励10积分");
 })
 .catch(error => console.log(errro));
+</script>
 ```
 
 ### 异步请求
@@ -1424,7 +1425,7 @@ ajax("http://localhost:8888/api/user?name=jerry")
 
 ### resolve
 
-📗 使用 `promise.resolve` 方法可以快速的返回一个promise对象。相当于
+📗 使用 `Promise.resolve` 方法可以快速的返回一个 promise 对象。相当于
 
 ```js
 return new Promise((resolve, reject) => {
@@ -1841,7 +1842,7 @@ export default function(promises) {
 
 ## async/await
 
-::: tip 使用 `async/await` 是promise 的语法糖，可以让编写 promise 更清晰易懂，也是推荐编写promise 的方式。
+::: tip 使用 async/await 是promise 的语法糖，可以让编写 promise 更清晰易懂，也是推荐编写promise 的方式。
 
 - `async/await` 本质还是promise，只是更简洁的语法糖书写
 - `async/await` 使用更清晰的promise来替换 promise.then/catch 的方式
@@ -1883,7 +1884,7 @@ run();
 
 ### await
 
-::: tip 使用 `await` 关键词后会等待promise 完
+::: tip 使用 await 关键词后会等待promise 完
 
 - `await` 后面一般是promise，如果不是直接返回
 - `await` 必须放在 async 定义的函数中使用
