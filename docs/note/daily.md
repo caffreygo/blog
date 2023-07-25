@@ -1,5 +1,9 @@
 # 日常笔记
 
+## Electron
+
+![](https://raw.githubusercontent.com/caffreygo/static/main/blog/electron/communication.png)
+
 ## JavaScript
 
 ::: details 零碎
