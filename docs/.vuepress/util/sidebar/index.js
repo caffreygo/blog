@@ -166,6 +166,14 @@ module.exports = {
       ],
     },
   ],
+  "/framework/electron/": [
+    {
+      text: "Electron",
+      children: [
+        "/framework/electron/basic",
+      ],
+    },
+  ],
   "/framework/vue/": [
     {
       text: "Vue.js",

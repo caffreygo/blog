@@ -1,6 +1,17 @@
+const { children } = require("./note");
+
 module.exports = {
   text: "前端框架",
   children: [
+    {
+      text: 'Electron',
+      children: [
+        {
+          text: "基础学习",
+          link: "/framework/electron/basic",
+        }
+      ]
+    },
     {
       text: "Vue Js",
       children: [
